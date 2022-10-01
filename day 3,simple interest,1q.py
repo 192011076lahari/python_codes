@@ -1,7 +1,14 @@
-p= int(input("principal amount="))
-t= int(input("enter no.of years:"))
-a= str(input("is customer senior citizen(y/n):"))
-rate=int(input("enter rate"))
-interest=(p*t*rate)/100
-print("interest=",interest)
-    
+print("Enter the principal amount:")
+p=int(input())
+
+print("Enter the number of years:")
+t=float(input())
+print("Is the customer is senior citizen :(Y/N)")
+ch=(input())
+if(ch=="Y"):
+    r=12
+else:
+    r=10
+
+SI=(p*t*r)/100
+print("simple intrest:",SI)
